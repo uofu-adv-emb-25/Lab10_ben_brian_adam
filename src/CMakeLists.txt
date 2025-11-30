@@ -1,3 +1,8 @@
+add_compile_definitions(
+    DELAY_MS=333
+    LED_PIN=28)
+
+
 # This is the main binary. List your C files here.
 add_executable(hello_freertos
     main.c
