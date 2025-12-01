@@ -11,3 +11,18 @@ For blinky using sleep ms, the current draw oscillates between 30-34 mA. (off/on
 For blinky using freertos task and vTaskDelay, the current draw oscillates between 34-38 mA. (off/on)
 
 For busy task utilizing ~100% CPU utilization, the current draw is stable around 31 mA. (no LED toggle).
+
+
+For gpio initiated interrupt, the current draw is stable around 30.8-32.8 mA (off/on) {1Hz}
+
+For gpio initiated interrupt, the current draw is stable around 31.8 average (off/on) {1kHz}
+
+For gpio initiated interrupt, the current draw is stable around 31.8 average (off/on) {10kHz}
+
+For gpio initiated interrupt, the current draw is stable around 32 average (off/on) {100kHz}
+
+For gpio initiated interrupt, the current draw is stable around 32.8 average (off/on) {1MHz}
+
+1.7 - 27.6 mA (sleep/on)
+
+900 uA  27.7 sleep-mA

@@ -1,12 +1,15 @@
 add_compile_definitions(
     DELAY_MS=333
+    EXT_SIG_PIN=0
     LED_PIN=28)
 
 
 # This is the main binary. List your C files here.
+#add_executable(hello_freertos main.c)
 add_executable(hello_freertos
-    main.c
+    hello_sleep_alarm.c
     )
+
 
 pico_set_program_name(hello_freertos "test")
 pico_set_program_version(hello_freertos "0.1")
@@ -22,6 +25,7 @@ target_link_libraries(hello_freertos PRIVATE
   pico_multicore
   pico_async_context_freertos
   FreeRTOS-Kernel-Heap4
+  hardware_sleep
 )
 
 # The CYW43 is the Wifi/Bluetooth module. If the board is set to pico_w, this
