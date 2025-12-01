@@ -23,6 +23,6 @@ For gpio initiated interrupt, the current draw is stable around 32 average (off/
 
 For gpio initiated interrupt, the current draw is stable around 32.8 average (off/on) {1MHz}
 
-1.7 - 27.6 mA (sleep/on)
+Using software to interrput a sleep state, the current draw is stable around 1.7 - 27.6 mA (sleep/on)
 
-900 uA  27.7 sleep-mA
+Using a GPIO hardware interrupt to wake the pico, the current draw is stable around 900 uA  27.7 sleep-mA
