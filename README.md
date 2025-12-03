@@ -1,5 +1,18 @@
 Development branch for lab 10, authored by Brian Stites, Ben Martins and Adam Billings
 
+VSYS and any shared ground pin should be where the power is supplied to.
+
+vsys input range: 1.8 - 5.5V
+
+wake_en0 0xffff_ffff
+wake_en1 0x7fff (15 bit)
+
+sleep_en0 0xffff_fff
+sleep_en1 0x7fff (15 bit)
+
+enabled0 0x0000_0000
+enabled1 0x0000 (15 bit)
+
 Forward drop of led is 1.723.
 
 Resistor is 217.3 ohm.
